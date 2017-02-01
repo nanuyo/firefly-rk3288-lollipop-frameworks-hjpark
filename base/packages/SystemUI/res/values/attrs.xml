@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <declare-styleable name="KeyButtonView">
+        <!-- key code to send when pressed; if absent or 0, no key is sent -->
+        <attr name="keyCode" format="integer" />
+        <!-- does this button generate longpress / repeat events? -->
+        <attr name="keyRepeat" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ToggleSlider">
+        <attr name="text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="NotificationLinearLayout">
+        <attr name="insetLeft" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="NotificationRowLayout">
+        <attr name="rowHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RecentsPanelView">
+        <attr name="recentItemLayout" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DeadZone">
+        <attr name="minSize" format="dimension" />
+        <attr name="maxSize" format="dimension" />
+        <attr name="holdTime" format="integer" />
+        <attr name="decayTime" format="integer" />
+        <attr name="orientation" />
+    </declare-styleable>
+    <declare-styleable name="BatteryMeterView">
+        <attr name="frameColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="Clock">
+        <attr name="amPmStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="small" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <declare-styleable name="UserAvatarView">
+        <attr name="frameWidth" format="dimension" />
+        <attr name="framePadding" format="dimension" />
+        <attr name="activeFrameColor" format="color" />
+        <attr name="frameColor" />
+    </declare-styleable>
+    <declare-styleable name="UserDetailItemView">
+        <attr name="regularFontFamily" format="string" />
+        <attr name="activatedFontFamily" format="string" />
+    </declare-styleable>
+    <declare-styleable name="DateView">
+        <attr name="datePattern" format="string" />
+    </declare-styleable>
+    <declare-styleable name="PseudoGridView">
+        <attr name="numColumns" format="integer" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="horizontalSpacing" format="dimension" />
+    </declare-styleable>
+	
+    <declare-styleable name="MaterialCalendarView">
+
+        <attr name="mcv_dateTextAppearance" format="reference"/>
+        <attr name="mcv_weekDayTextAppearance" format="reference"/>
+        <attr name="mcv_headerTextAppearance" format="reference"/>
+
+        <attr name="mcv_arrowColor" format="color"/>
+        <attr name="mcv_leftArrowMask" format="reference"/>
+        <attr name="mcv_rightArrowMask" format="reference"/>
+        <attr name="mcv_selectionColor" format="color"/>
+
+        <attr name="mcv_showOtherDates" format="integer">
+            <flag name="none" value="0" />
+            <flag name="other_months" value="1" />
+            <flag name="out_of_range" value="2" />
+            <flag name="decorated_disabled" value="4" />
+            <flag name="defaults" value="4" />
+            <flag name="all" value="7" />
+        </attr>
+
+        <attr name="mcv_weekDayLabels" format="reference" />
+        <attr name="mcv_monthLabels" format="reference" />
+
+        <attr name="mcv_tileSize" format="dimension"/>
+
+        <attr name="mcv_firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1" />
+            <enum name="monday" value="2" />
+            <enum name="tuesday" value="3" />
+            <enum name="wednesday" value="4" />
+            <enum name="thursday" value="5" />
+            <enum name="friday" value="6" />
+            <enum name="saturday" value="7" />
+        </attr>
+
+    </declare-styleable>
+</resources>
+
